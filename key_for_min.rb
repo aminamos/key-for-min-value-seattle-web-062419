@@ -16,9 +16,12 @@ def key_for_min_value(name_hash)
       sortedstep2 = [a, b, c]
     elsif  (c < a) && (a < b)
       sortedstep2 = [c, a, b]
-    elsif ()
-    elsif ()
-    elsif ()
+    elsif (a < c && c < b)
+      sortedstep2 = [a, c, b]
+    elsif (b < c && c < a)
+      sortedstep2 = [b, c, a]
+    elsif (b < a && a < c)
+      sortedstep2 = [b, a, c]
     end
   name_hash.key(sortedstep2.first)
 end
