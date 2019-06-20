@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   notsorted = name_hash.collect {|key, value| value}
   sortedstep2 = []
     if name_hash.length == 0
-        nild
+        nil
     elsif(notsorted[0] > notsorted[1]) && (notsorted[1] > notsorted[2])
       sortedstep2 = [notsorted[2], notsorted[1], notsorted[0]]
     elsif (notsorted[0] < notsorted[1]) && (notsorted[1] < notsorted[2])
