@@ -10,8 +10,6 @@ def key_for_min_value(name_hash)
       sortedstep2 = [notsorted[2], notsorted[1], notsorted[0]]
     elsif (notsorted[0] < notsorted[1]) && (notsorted[1] < notsorted[2])
       sortedstep2 = [notsorted[0], notsorted[1], notsorted[2]]
-    elsif (notsorted[0] < notsorted[1]) && (notsorted[0] > notsorted[2])
-      sortedstep2 = [notsorted[2], notsorted[0], notsorted[1]]
     elsif  (notsorted[2] < notsorted[0]) && (notsorted[0] < notsorted[1])
       sortedstep2 = [notsorted[2], notsorted[0], notsorted[1]]
     end
