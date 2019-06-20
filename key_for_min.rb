@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
   
   notsorted = name_hash.collect {|key, value| value}
-  a = notsorted[0]
+  a = notsorted[0] # messy, but functional
   b = notsorted[1]
   c = notsorted[2]
   sortedstep2 = []
