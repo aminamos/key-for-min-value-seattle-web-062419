@@ -2,10 +2,11 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
+  
+  notsorted = name_hash.collect {|key, value| value}
   a = notsorted[0]
   b = notsorted[1]
   c = notsorted[2]
-  notsorted = name_hash.collect {|key, value| value}
   sortedstep2 = []
     if name_hash.length == 0
         nil
